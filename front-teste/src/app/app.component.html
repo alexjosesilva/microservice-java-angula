@@ -1,12 +1,19 @@
-<h1>
-  Login CPF
-</h1>
-
-<div>
-    <br> <input matInput type="text" >
-    <br> <button mat-button>Entrar</button>
-</div>
-
-<div>
-  <br> <a href="https://www.w3schools.com">Cadastrar CPF</a>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+    <form class="form">
+      <mat-card-content>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="CPF"  mask="000.000.000-00">
+        </mat-form-field>
+        <br/>
+        <mat-form-field class="full-width">
+          <input id="cpf" type="password" matInput placeholder="Password" maxlength="11">
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button color="accent" class="btn-block">Log in</button>
+    </form>
+  </mat-card>
 </div>
